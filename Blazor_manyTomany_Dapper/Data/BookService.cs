@@ -62,7 +62,9 @@ namespace Blazor_manyTomany_Dapper.Data
             return totBook;
         }
         public Task<List<BookAuPub>> ListAll(int skip,
-               int take, string orderBy, string direction = "DESC",
+               int take, 
+               string orderBy, 
+               string direction = "DESC",
                string search = "")
         {
             var books = Task.FromResult(_dapperService.
